@@ -7,15 +7,14 @@ import BaseClass.Creature;
 public class Combat
 {
      /**
-      * Takes two parameters of creature type, makes them fight to the death. Took very long not to just to code, but the logic was 50% of it.
-      *
-      * @param creature1
-      * @param creature2
+      * Simulates a fight to the death between two creatures. Each creature attacks until one falls.
+      * @param creature1 the first creature participating in the fight
+      * @param creature2 the second creature participating in the fight
       */
      public void fight(Creature creature1, Creature creature2)
      {
 
-         System.out.printf("""
+          System.out.printf("""
                   Fight started between:
                   %s (%dhp) and %s (%d hp)
                   """, creature1.getName(), creature1.getHealthPoints(), creature2.getName(), creature2.getHealthPoints());

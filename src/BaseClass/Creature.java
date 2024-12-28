@@ -1,11 +1,9 @@
 /**
  * Creation of a creature superclass, all other classes will inherit this / these constructors and methods
  */
-
 package BaseClass;
 
-public class Creature
-{
+public class Creature {
 
     private String name;
     private int strength;
@@ -20,12 +18,11 @@ public class Creature
 
     /**
      * All subclasses inherit this constructor
-     * @param name
-     * @param strength
+     * @param name of the creature
+     * @param strength of the creature
      */
     // Parameterized Constructor
-    public Creature(String name, int strength)
-    {
+    public Creature(String name, int strength) {
         this.name = name;
         this.strength = strength;
     }
@@ -33,41 +30,52 @@ public class Creature
     /**
      * @return getters / setting setters
      */
-    // Setters and Getters
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setName(String name)
-    {
+    /**
+     * Sets the name of the creature.
+     * @param name Set the name
+     */
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getStrength()
-    {
-        if (strength >= 0)
-        {
+    /**
+     * Gets the strength of the creature. Ensures non-negative values.
+     * @return the strength or -1 if invalid
+     */
+    public int getStrength() {
+        if (strength >= 0) {
             return strength;
-        } else
-        {
+        } else {
             System.out.println("Strength must be non-negative");
         }
         return -1;
     }
 
-    public void setStrength(int strength)
-    {
+    /**
+     * Sets the strength of the creature.
+     * @param strength The strength of the creature
+     */
+    public void setStrength(int strength) {
         this.strength = strength;
     }
 
-    public int getHealthPoints()
-    {
+    /**
+     * Gets the health points of the creature.
+     * @return the health points
+     */
+    public int getHealthPoints() {
         return healthPoints;
     }
 
-    public void setHealthPoints(int healthPoints)
-    {
+    /**
+     * Sets the health points of the creature.
+     * @param healthPoints the health points of the creature
+     */
+    public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
     }
 
@@ -76,41 +84,20 @@ public class Creature
      *  Since converting from double to int will round down, we need Strength + 1 to get the maximum damage output
      * @return calculation
      */
-    public int getDamage()
-    {
+    public int getDamage() {
         int randomValue = (int)(Math.random() * strength);
         //System.out.println("Random Value before adding 1: " + randomValue);
-        return (int)(randomValue + 1);
+        return randomValue + 1;
     }
 
+    /**
+     * Provides a string representation of the creature, including its name, strength, and health points.
+     * @return the string representation
+     */
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Name: " + getName() +
                 ", Strength: " + getStrength() +
                 ", Health Points: " + getHealthPoints();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

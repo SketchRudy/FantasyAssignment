@@ -1,6 +1,6 @@
 /**
- * @Author: Rudolf Sirbu
- * @Version: 1.0?
+ * @Author: Rudy S
+ * @Version: 1.0
  */
 
 import BaseClass.Creature;

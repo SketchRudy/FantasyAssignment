@@ -1,31 +1,31 @@
+/**
+ * Represents a Goblin, a type of creature with specialized damage calculation.
+ */
 package Subclass;
 import BaseClass.Creature;
 
-public class Goblin extends Creature
-{
-
+public class Goblin extends Creature {
     // DEFAULT constructor
-    public Goblin()
-    {
+    public Goblin() {
         super();
     }
 
     /**
      * Blueprint for goblin creature
-     * @param name
-     * @param strength
+     * @param name The name of the Goblin
+     * @param strength The strength of the Goblin
      */
-    public Goblin(String name, int strength)
-    {
+    public Goblin(String name, int strength) {
         super(name, strength);
     }
 
     /**
+     * Calculates the damage dealt by the Goblin.
      * Elves and Goblins inflict rando num between 0 and strength / 2
-     * @return
+     * @return the calculated damage
      */
-    public int getDamage()
-    {
+    @Override
+    public int getDamage() {
         return super.getDamage() / 2;
     }
 

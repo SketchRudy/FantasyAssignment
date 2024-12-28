@@ -2,48 +2,43 @@ package Subclasstwo;
 import Subclass.Demon;
 import java.util.Random;
 
-public class Cyberdemon extends Demon
-{
+public class Cyberdemon extends Demon {
     // Default constructor
-    public Cyberdemon()
-    {
+    public Cyberdemon() {
         super();
     }
 
     /**
      * Blueprint for another Demon subclass
-     * @param name
-     * @param strength
-     * @param planeOfExistence
+     * @param name The name of the Cyberdemon
+     * @param strength The strength of the Cyberdemon
+     * @param planeOfExistence The plane of existence where the Cyberdemon resides
      */
-    public Cyberdemon(String name, int strength, String planeOfExistence)
-    {
+    public Cyberdemon(String name, int strength, String planeOfExistence) {
         super(name, strength, planeOfExistence);
-
     }
 
     /**
-     * @return the damage for this demon species, has crit chance
+     * Calculates the damage dealt by the Cyberdemon.
+     * Includes a 1% chance to inflict a critical hit dealing 1000 damage.
+     * @return the calculated damage
      */
-    public int getDamage()
-    {
+    @Override
+    public int getDamage() {
         Random random = new Random();
         // 1% chance for critical hit
         if (random.nextDouble() < 0.01) {
             return 1000; // Critical hit damage
-        }
-        else
-        {
+        } else {
             // Normal damage calculation from Creature class
             return super.getDamage();
         }
     }
 
     /**
-     * @return the place it came from
+     * @return The place of existence
      */
-    public String getSpecies()
-    {
+    public String getSpecies() {
         return getPlaneOfExistence();
     }
 
