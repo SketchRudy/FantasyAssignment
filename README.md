@@ -89,4 +89,4 @@ Compile and run the program to view the combat simulation in the console.
 ## How to Run ▶️
 1. Clone the repository:
    ```bash  
-   git clone https://github.com/yourusername/fantasy-combat-simulator.git  
+   git clone https://github.com/SketchRudy/Fantasy_Combat_Simulator.git
