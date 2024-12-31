@@ -63,9 +63,15 @@ Compile and run the program to view the combat simulation in the console.
 ![img.png](images/img3.png)  
 ![img.png](images/img4.png)
 
-> **Note:** There’s a 50/50 chance of Riven winning or Sir Arthur due to randomized damage in base damage class.   
-> Riven's hp is set to 75 and strength 55   
-> Sir Arthur's hp is set to 100 and strength 25
+> **Note:** Due to randomized damage calculations in the base damage class, Riven and Sir Arthur have an equal chance of winning (50/50).
+> - **Riven:**   
+>   - HP: 75
+>   - Strength: 55 (halved to 27.5 due to Elf class, resulting in a damage range of 1-27 per attack)
+>   - Damage Range: 1–27 per attack
+> - **Sir Arthur:**  
+>   - hp: 100
+>   - Strength: 25
+>   - Damage Range: 1–25 per attack
 
 
 ---
