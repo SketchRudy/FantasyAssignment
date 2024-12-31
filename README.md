@@ -63,7 +63,10 @@ Compile and run the program to view the combat simulation in the console.
 ![img.png](images/img3.png)  
 ![img.png](images/img4.png)
 
-> **Note:** There’s a 50/50 chance of Riven winning or Sir Arthur due to randomized crit chance.
+> **Note:** There’s a 50/50 chance of Riven winning or Sir Arthur due to randomized damage in base damage class.   
+> Riven's hp is set to 75 and strength 55   
+> Sir Arthur's hp is set to 100 and strength 25
+
 
 ---
 
