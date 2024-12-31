@@ -53,8 +53,15 @@ ___
     - Detailed attack logs, including damage dealt and remaining health.
 
 ## Sample Images
-Modify the Fantasy class to customize the creatures or battles.
+Modify the Fantasy class to customize the creatures or battles.  
 Compile and run the program to view the combat simulation in the console.
+
+![img.png](images/img.png)
+![img.png](images/img1.png)  
+![img.png](images/img2.png)  
+![img.png](images/img3.png)  
+![img.png](images/img4.png)
+
 
 ## Future Improvements
 Add more creature subclasses with unique abilities.
