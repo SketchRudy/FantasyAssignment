@@ -10,7 +10,7 @@ Each creature is part of a well-structured hierarchy, allowing for easy expansio
 
 ---
 
-## Features ✨
+## Features 
 - **Creature Base Class:** A superclass for all creatures with common attributes like `name`, `strength`, and `healthPoints`.
 - **Specialized Subclasses:** Unique creature types such as `Elf`, `Goblin`, `Demon`, `Cyberdemon`, `Balrog`, and `Human`.
 - **Combat Logic:** A `Combat` class simulates turn-based fights to the death between two creatures.
@@ -18,7 +18,7 @@ Each creature is part of a well-structured hierarchy, allowing for easy expansio
 
 ---
 
-## Classes Overview 🧩
+## Classes Overview 
 
 ### `Creature` (Base Class)
 - **Attributes:**
@@ -53,7 +53,7 @@ Each creature is part of a well-structured hierarchy, allowing for easy expansio
 
 ---
 
-## Sample Images 🖼️
+## Sample Images 
 Modify the `Fantasy` class to customize the creatures or battles.  
 Compile and run the program to view the combat simulation in the console.
 
@@ -76,7 +76,7 @@ Compile and run the program to view the combat simulation in the console.
 
 ---
 
-## Future Improvements 🚀
+## Future Improvements 
 - Add more creature subclasses with unique abilities.
 - Enhance the combat system with:
     - Multi-creature battles.
@@ -86,7 +86,7 @@ Compile and run the program to view the combat simulation in the console.
 
 ---
 
-## How to Run ▶️
+## How to Run ▶
 1. Clone the repository:
    ```bash  
    git clone https://github.com/SketchRudy/Fantasy_Combat_Simulator.git
